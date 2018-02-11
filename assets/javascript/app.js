@@ -53,7 +53,7 @@ function generateLossDueToTimeOut() {
 function generateWin() {
   correctTally++;
   gameHTML = "<p>Time Remaining: <label class='timer'>"
-    + counter + "</label></p>" + "<p>You must be a cloud connoisseur! <br><br>  The answer is: "
+    + counter + "</label></p>" + "<p>Whoa! You must be a cloud connoisseur! <br><br>  The answer was: "
     + correctAnswers[questionCounter] + "</p>";
   $(".mainArea").html(gameHTML);
   setTimeout(wait, 1000 * 5);
@@ -62,7 +62,7 @@ function generateWin() {
 function generateLoss() {
   incorrectTally++;
   gameHTML = "<p>Seconds Remaining: <label class='timer'>"
-    + counter + "</label></p>" + "<p>I think your head is in the clouds! <br><br> The correct answer is: "
+    + counter + "</label></p>" + "<p>Oh no! I think your head is stuck in the clouds! <br><br> The correct answer was: "
     + correctAnswers[questionCounter] + "</p>";
   $(".mainArea").html(gameHTML);
   setTimeout(wait, 1000 * 5);
